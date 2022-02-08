@@ -64,6 +64,11 @@
                     $('.go-top').stop().fadeOut(1000);
                 }
             });
+            $('.go-top-btn').on({
+                click: function(){
+                    $('html, body').stop().animate({scrollTop: 0}, 600);
+                }
+            });
         },
         mobileNav: function(){
             //모바일
